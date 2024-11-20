@@ -30,7 +30,7 @@ async function testPostUserRequest() {
 async function testPostSubjectRequest() {
   try {
     const response = await axios.post('http://localhost:3000/subject/', {
-      name: 'Math'
+      name: 'History'
     });
     console.log('Response data:', response.data);
   } catch (error) {
@@ -57,4 +57,4 @@ async function testPutSubjectsRequest() {
 
 // testPostSubjectRequest();
 
-testPutSubjectsRequest();
+// testPutSubjectsRequest();
